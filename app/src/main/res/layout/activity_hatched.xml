@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hatched"
+    tools:context=".Hatched">
+
+    <ImageView
+        android:id="@+id/imgFeed"
+        android:layout_width="137dp"
+        android:layout_height="151dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/feed" />
+
+    <ImageView
+        android:id="@+id/imgSideBar"
+        android:layout_width="80dp"
+        android:layout_height="335dp"
+        android:layout_marginEnd="-15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.217"
+        app:srcCompat="@drawable/sidebar" />
+
+    <ImageView
+        android:id="@+id/imgQuest"
+        android:layout_width="75dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="36dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgSideBar"
+        app:srcCompat="@drawable/quest" />
+
+    <ImageView
+        android:id="@+id/imgSteps"
+        android:layout_width="83dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="60dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgQuest"
+        app:srcCompat="@drawable/steps" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
